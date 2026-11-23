@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Rota de coleta · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/coleta.js"></script>
+  </head>
+  <body data-pagina="coleta-rota">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao profissional">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta Profissional</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Rota de coleta</h1>
+        <p class="introducao">Agendamento confirmado.</p>
+        <div class="conteudo">
+          <div class="mapa">
+            <img src="/images/mapa.svg" alt="Mapa esquemático da rota" />
+            <p class="mapa-legenda">Mapa esquemático</p>
+          </div>
+          <div class="cartao">
+            <h2>Destino da retirada</h2>
+            <p id="endereco">Rua de exemplo, 80</p>
+          </div>
+        </div>
+        <div class="acoes">
+          <button type="button" class="botao" id="gps" data-acao="gps:C-001">Abrir GPS</button>
+          <a class="botao secundario" href="registro.html?id=C-001" id="registrar">
+            Registrar coleta
+          </a>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

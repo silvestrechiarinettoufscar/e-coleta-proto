@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Triagem do lote · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/triagem.js"></script>
+  </head>
+  <body data-pagina="triagem-formulario">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao profissional">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta Profissional</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Triagem do lote</h1>
+        <p class="introducao">
+          <span id="lote-id">EC-024</span>
+          · Editar categoria
+        </p>
+        <div class="conteudo">
+          <form id="categoria" class="pilha" action="revisao.html" novalidate>
+            <div class="campo">
+              <label for="material">Categoria</label>
+              <select id="material" name="material">
+                <option value="notebook">Notebook</option>
+                <option value="celular">Celular</option>
+                <option value="cabos">Cabos</option>
+              </select>
+              <span class="erro-campo" id="erro-material" hidden></span>
+            </div>
+            <div class="duas-colunas">
+              <div class="campo">
+                <label for="quantidade">Quantidade</label>
+                <input
+                  id="quantidade"
+                  name="quantidade"
+                  value="1"
+                  inputmode="numeric"
+                  aria-describedby="erro-quantidade"
+                />
+                <span class="erro-campo" id="erro-quantidade" hidden></span>
+              </div>
+              <div class="campo">
+                <label for="peso">Peso por unidade (kg)</label>
+                <input
+                  id="peso"
+                  name="peso"
+                  value="2,4"
+                  inputmode="decimal"
+                  aria-describedby="erro-peso"
+                />
+                <span class="erro-campo" id="erro-peso" hidden></span>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="observacoes">Observações (opcional)</label>
+              <textarea id="observacoes" name="observacoes" maxlength="500">
+Carcaça danificada</textarea>
+              <span class="erro-campo" id="erro-observacoes" hidden></span>
+            </div>
+            <button type="button" class="botao secundario" id="ditar" data-acao="ditar">
+              Ditar observação
+            </button>
+            <p class="apoio">Revise o texto antes de finalizar.</p>
+          </form>
+        </div>
+        <div class="acoes">
+          <button class="botao" type="submit" form="categoria">Salvar e revisar lote</button>
+          <button type="button" class="botao secundario" id="ouvir" data-acao="ouvir">
+            Ler texto em voz alta
+          </button>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Texto ampliado · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/acessibilidade.js"></script>
+  </head>
+  <body data-pagina="acessibilidade-texto">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta</span>
+      </header>
+      <main id="conteudo">
+        <h1>Texto ampliado</h1>
+        <p class="introducao">Veja como a leitura muda na tela.</p>
+        <div class="conteudo">
+          <div class="cartao">
+            <h2>Tamanho padrão</h2>
+            <p>Materiais aceitos</p>
+          </div>
+          <div class="cartao">
+            <h2>Tamanho ampliado</h2>
+            <p class="exemplo-ampliado">Materiais aceitos</p>
+            <p>Exemplo de 15 para 20 px</p>
+          </div>
+        </div>
+        <div class="acoes">
+          <a class="botao secundario" href="index.html" id="voltar-acessibilidade">
+            Voltar à acessibilidade
+          </a>
+        </div>
+      </main>
+      <footer class="rodape"></footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

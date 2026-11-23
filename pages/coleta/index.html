@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Itinerário do dia · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/coleta.js"></script>
+  </head>
+  <body data-pagina="coleta-itinerario">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao profissional">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta Profissional</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Itinerário do dia</h1>
+        <p class="introducao">Perfil Motorista · São Carlos</p>
+        <div class="conteudo">
+          <a class="cartao cartao-clicavel" href="agendamento.html?id=C-001" data-coleta="C-001">
+            <div class="cartao-cabecalho">
+              <h2>Coleta de Beatriz</h2>
+              <strong>09:00</strong>
+            </div>
+            <p>Rua de exemplo, 80</p>
+            <p>9h às 10h · 3 itens</p>
+            <p>Volume previsto: 1 caixa</p>
+            <p class="selo" data-concluida hidden>Concluída</p>
+          </a>
+          <a class="cartao cartao-clicavel" href="agendamento.html?id=C-002" data-coleta="C-002">
+            <div class="cartao-cabecalho">
+              <h2>Coleta seguinte</h2>
+              <strong>10:30</strong>
+            </div>
+            <p>Rua de exemplo, 120</p>
+            <p>10h30 às 11h30 · 5 itens</p>
+            <p class="selo" data-concluida hidden>Concluída</p>
+          </a>
+        </div>
+        <div class="acoes">
+          <a class="botao" id="abrir-coleta" href="agendamento.html?id=C-001">
+            Ver primeira coleta
+          </a>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

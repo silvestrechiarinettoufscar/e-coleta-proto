@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Protótipo E-Coleta · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script type="module" src="src/main.js"></script>
+  </head>
+  <body data-pagina="menu">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta</span>
+        <a class="acessibilidade" href="pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Protótipo E-Coleta</h1>
+        <p class="introducao">Selecione um fluxo para simular.</p>
+        <div class="conteudo">
+          <div class="pilha menu-fluxos">
+            <a class="cartao cartao-clicavel" href="pages/descarte/index.html">
+              <h2>01 Descarte</h2>
+              <p>Beatriz · Encontrar um ponto de descarte</p>
+            </a>
+            <a class="cartao cartao-clicavel" href="pages/coleta/index.html">
+              <h2>02 Coleta</h2>
+              <p>Márcio · Realizar uma retirada</p>
+            </a>
+            <a class="cartao cartao-clicavel" href="pages/triagem/index.html">
+              <h2>03 Triagem</h2>
+              <p>Valdir · Registrar a entrada de um lote</p>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer class="rodape"></footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

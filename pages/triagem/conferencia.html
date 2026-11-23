@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Conferir lote · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/triagem.js"></script>
+  </head>
+  <body data-pagina="triagem-conferencia">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao profissional">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta Profissional</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Conferir lote</h1>
+        <p class="introducao">
+          Lote
+          <span id="lote-id">EC-024</span>
+          · Recebido às
+          <span id="recebido-em">10h15</span>
+        </p>
+        <div class="conteudo">
+          <div class="cartao">
+            <h2>Registro da coleta</h2>
+            <p>
+              Motorista:
+              <span id="motorista">Márcio</span>
+            </p>
+            <p>
+              Peso estimado:
+              <span id="faixa">até 5 kg</span>
+            </p>
+            <p>
+              Materiais:
+              <span id="itens">notebook · celular · cabos</span>
+            </p>
+          </div>
+          <div class="cartao">
+            <h2>Próxima ação</h2>
+            <p>Confira o material recebido e informe o peso aferido.</p>
+          </div>
+        </div>
+        <div class="acoes">
+          <a class="botao" href="formulario.html?id=EC-024" id="iniciar-triagem">Iniciar triagem</a>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

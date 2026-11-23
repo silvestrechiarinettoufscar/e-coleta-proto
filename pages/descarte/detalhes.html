@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Ponto Campus · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/descarte.js"></script>
+  </head>
+  <body data-pagina="descarte-detalhes">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Ponto Campus</h1>
+        <p class="introducao">Ponto de descarte compatível.</p>
+        <div class="conteudo">
+          <div class="cartao">
+            <h2>Endereço e horário</h2>
+            <p id="endereco">Rua de exemplo, 100</p>
+            <p id="horario">Seg. a sex., das 8h às 17h</p>
+            <p>
+              <span id="distancia">650 m</span>
+              da sua localização
+            </p>
+          </div>
+          <div class="cartao">
+            <h2>Materiais aceitos</h2>
+            <p id="materiais-aceitos">Notebook · Celular · Cabos</p>
+          </div>
+        </div>
+        <div class="acoes">
+          <a class="botao" href="rota.html?id=campus" id="ver-rota">Como chegar a pé</a>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

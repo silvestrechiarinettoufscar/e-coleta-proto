@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Pontos próximos · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/descarte.js"></script>
+  </head>
+  <body data-pagina="descarte-pontos">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Pontos próximos</h1>
+        <p class="introducao">
+          <span id="quantidade-pontos">2</span>
+          pontos aceitam todos os itens.
+          <br />
+          Ordenados por distância.
+        </p>
+        <div class="conteudo">
+          <div id="pontos" class="pilha">
+            <a class="cartao cartao-clicavel" href="detalhes.html?id=campus" data-ponto="campus">
+              <div class="cartao-cabecalho">
+                <h2>Ponto Campus</h2>
+                <strong data-distancia>650 m</strong>
+              </div>
+              <p>Rua de exemplo, 100</p>
+              <p>Seg. a sex., das 8h às 17h</p>
+              <p>Notebook · Celular · Cabos</p>
+            </a>
+            <a class="cartao cartao-clicavel" href="detalhes.html?id=centro" data-ponto="centro">
+              <div class="cartao-cabecalho">
+                <h2>Ponto Centro</h2>
+                <strong data-distancia>1,4 km</strong>
+              </div>
+              <p>Rua de exemplo, 240</p>
+              <p>Seg. a sex., das 9h às 16h</p>
+              <p>Notebook · Celular · Cabos</p>
+            </a>
+          </div>
+          <p id="sem-resultados" hidden>Nenhum ponto encontrado.</p>
+        </div>
+        <div class="acoes">
+          <a class="botao" href="detalhes.html?id=campus" id="ver-ponto">Ver Ponto Campus</a>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

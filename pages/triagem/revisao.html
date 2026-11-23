@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Revisar lote · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/triagem.js"></script>
+  </head>
+  <body data-pagina="triagem-revisao">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao profissional">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta Profissional</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Revisar lote</h1>
+        <p class="introducao">
+          <span id="lote-id">EC-024</span>
+          ·
+          <span id="quantidade-categorias">3</span>
+          categorias registradas
+        </p>
+        <div class="conteudo">
+          <div class="cartao">
+            <h2>Materiais aferidos</h2>
+            <div id="materiais-aferidos">
+              <p>Notebook · 1 un. · 2,4 kg</p>
+              <p>Celular · 1 un. · 0,2 kg</p>
+              <p>Cabos · 3 un. · 0,6 kg</p>
+            </div>
+          </div>
+          <div class="cartao">
+            <h2>
+              Peso total:
+              <span id="peso-total">3,2 kg</span>
+            </h2>
+            <p>Confira os dados antes de finalizar a entrada.</p>
+          </div>
+        </div>
+        <div class="acoes">
+          <a class="botao secundario" href="formulario.html?id=EC-024" id="editar-categorias">
+            Editar categorias
+          </a>
+          <button type="button" class="botao" id="finalizar">Finalizar entrada</button>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>

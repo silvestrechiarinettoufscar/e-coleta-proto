@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#185b42" />
+    <meta
+      name="description"
+      content="Protótipo do E-Coleta para a disciplina de Interação Humano-Computador da UFSCar."
+    />
+    <title>Lotes recebidos · E-Coleta</title>
+    <link rel="icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="../../src/styles.css" />
+    <script type="module" src="../../src/pages/triagem.js"></script>
+  </head>
+  <body data-pagina="triagem-lotes">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <div class="aplicacao profissional">
+      <header class="cabecalho">
+        <span class="marca">E-Coleta Profissional</span>
+        <a class="acessibilidade" href="../../pages/acessibilidade/index.html" id="acessibilidade">
+          <svg
+            class="icone"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="4" r="2" />
+            <path d="m4 8 8 2 8-2M12 10v5m0 0-4 7m4-7 4 7" />
+          </svg>
+          Acessibilidade
+        </a>
+      </header>
+      <main id="conteudo">
+        <h1>Lotes recebidos</h1>
+        <p class="introducao">Perfil Triador · Galpão São Carlos</p>
+        <div class="conteudo">
+          <a class="cartao cartao-clicavel" href="conferencia.html?id=EC-024" data-lote="EC-024">
+            <div class="cartao-cabecalho">
+              <h2>Lote EC-024</h2>
+              <strong data-pendente>Pendente</strong>
+            </div>
+            <p>Origem: coleta de Márcio</p>
+            <p>Entrada às 10h15</p>
+            <p>
+              Situação:
+              <span data-situacao>aguardando triagem</span>
+            </p>
+          </a>
+          <a class="cartao cartao-clicavel" href="conferencia.html?id=EC-023" data-lote="EC-023">
+            <div class="cartao-cabecalho">
+              <h2>Lote EC-023</h2>
+              <strong data-pendente hidden>Pendente</strong>
+            </div>
+            <p>Origem: coleta de Márcio</p>
+            <p>Entrada às 9h40</p>
+            <p>
+              Situação:
+              <span data-situacao>entrada registrada</span>
+            </p>
+          </a>
+        </div>
+        <div class="acoes">
+          <a class="botao" href="conferencia.html?id=EC-024">Abrir lote EC-024</a>
+        </div>
+      </main>
+      <footer class="rodape">
+        <a class="voltar-menu" href="../../index.html">Menu dos fluxos</a>
+      </footer>
+    </div>
+    <div id="mensagem" class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>
